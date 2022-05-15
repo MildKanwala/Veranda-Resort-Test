@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veranda Resort</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/assets/img/Brand/favicon.png">
+
+    <!-- Boostrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/sass/custom.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="./assets/css/index-style.css">
+
+</head>
+
+<body>
+
+    <!-- =============== Header =============== -->
+    <header class="fixed-top" id="header">
+
+        <!-- Nav -->
+        <nav class="nav">
+            <ul class="nav nav-pills container justify-content-end">
+                <li class="nav-item">
+                    <a class="menu nav-link" href="#">Go to Corporate Site</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menu nav-link" href="#">IR Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="menu nav-link" href="#">Information Inquiry</a>
+                </li>
+                <li class="language nav-item">
+                    <a class="nav-link" href="#">TH</a>
+                </li>
+                <li class="language nav-item active">
+                    <a class="nav-link" href="#">EN</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+
+                <!-- Brand -->
+                <a class="navbar-brand" href="#">
+                    <img id="brand" src="./assets/img/Brand/logo_verandahuahin.png" alt="">
+                </a>
+
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Collapse Menu -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarToggle">
+                    <ul class="navbar-nav justify-content-center">
+
+                        <div class="dropdown" type="button">
+                            <div class="nav-link" id="dropdownMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                Company Info
+                            </div>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu" id="comInfo">
+                                <li><a class="dropdown-item" href="#">General Information</a></li>
+                                <li><a class="dropdown-item" href="#">Nature of Business</a></li>
+                                <li><a class="dropdown-item" href="#">Business Structure</a></li>
+                                <li><a class="dropdown-item" href="#">Company Milestone</a></li>
+                                <li><a class="dropdown-item" href="#">Message from Chairman</a></li>
+                                <li><a class="dropdown-item" href="#">Message from CEO</a></li>
+                                <li><a class="dropdown-item" href="#">Vision & Mission</a></li>
+                                <li class="dropdown-item dropend" type="button">
+                                    <div id="subDropdownMenu" data-bs-toggle="dropdown">
+                                        Management Structure
+                                        <span>
+                                            <img class="dropend-image-icon"
+                                                src="./assets/img/icon/icon-right-arrow.svg">
+                                        </span>
+                                    </div>
+                                    <ul id="sub-dropdown-menu" class="dropdown-menu" aria-labelledby="subDropdownMenu">
+                                        <li><a class="dropdown-item" href="#">Organization Chart</a></li>
+                                        <li><a class="dropdown-item" href="#">Board of Directors</a></li>
+                                        <li><a class="dropdown-item" href="#">Sub-Committees</a></li>
+                                        <li><a class="dropdown-item" href="#">Management Team</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Financial Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Stock Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Shareholder Info</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Corporate Governance</a>
+                        </li>
+                        <div class="dropdown" id="last-dropdown">
+                            <div class="nav-link" type="button" id="lastDropdownMenu" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                News & Publications
+                            </div>
+                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="lastDropdownMenu">
+                                <li><a class="dropdown-item" href="#">SET Annoucements</a></li>
+                                <li><a class="dropdown-item" href="#">IR Press Release</a></li>
+                                <li><a class="dropdown-item" href="#">Presentations and Webcasts</a></li>
+                                <li><a class="dropdown-item" href="#">CompProspetus / Fillingany</a></li>
+                                <li><a class="dropdown-item" href="#">Annual Report</a></li>
+                                <li><a class="dropdown-item" href="#">Form 56-1</a></li>
+                                <li><a class="dropdown-item" href="#">Investor Kits</a></li>
+                            </ul>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <!-- =============== Banner =============== -->
+    <section id="banner">
+        <div class="carousel slide" data-bs-ride="carousel" id="myBanner">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#myBanner" data-bs-slide-to="0"
+                    class="carousel-btn active"></button>
+                <button type="button" data-bs-target="#myBanner" data-bs-slide-to="1" class="carousel-btn"></button>
+                <button type="button" data-bs-target="#myBanner" data-bs-slide-to="2" class="carousel-btn"></button>
+                <button type="button" data-bs-target="#myBanner" data-bs-slide-to="3" class="carousel-btn"></button>
+            </div>
+
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="image-dark-overlay">
+                        <img src="./assets/img/Hero Banner/hero-img01.jpg"
+                            class="carousel-image-1 w-100 justify-self-center">
+                    </div>
+                    <div class="carousel-caption d-md-block">
+                        <h3 class="carousel-title">
+                            design hotels resorts and lifestyle
+                            businesses where customers feel good
+                        </h3>
+                        <button type="button" class="btn button">reader more</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-dark-overlay">
+                        <img src="./assets/img/Hero Banner/hero-img02.jpg"
+                            class="carousel-image-1 w-100 justify-self-center">
+                    </div>
+                    <div class="carousel-caption d-md-block">
+                        <h3 class="carousel-title">
+                            design hotels resorts and lifestyle
+                            businesses where customers feel good
+                        </h3>
+                        <button type="button" class="btn button">reader more</button>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-dark-overlay">
+                        <img src="./assets/img/Hero Banner/hero-img03.jpg"
+                            class="carousel-image-1 w-100 justify-self-center">
+                    </div>
+                    <div class="carousel-caption d-md-block">
+                        <h3 class="carousel-title">
+                            design hotels resorts and lifestyle
+                            businesses where customers feel good
+                        </h3>
+                        <button type="button" class="btn button">reader more</button>
+
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="image-dark-overlay">
+                        <img src="./assets/img/Hero Banner/hero-img04.jpg"
+                            class="carousel-image-1 w-100 justify-self-center">
+                    </div>
+                    <div class="carousel-caption d-md-block">
+                        <h3 class="carousel-title">
+                            design hotels resorts and lifestyle
+                            businesses where customers feel good
+                        </h3>
+
+                        <button type="button" class="btn button">reader more</button>
+
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#myBanner" data-bs-slide="prev">
+                <span aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#myBanner" data-bs-slide="next">
+                <span aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+    </section>
+
+    <!-- =============== Detail =============== -->
+    <section id="detail" class="py-5">
+        <div class="container text-center">
+            <h4 class="detail-title mt-4">
+                veranda resort public company limited
+            </h4>
+            <p class="detail-description ">
+                The Group is committed to be a leading player in the hospitality industry, and real estate development.
+                restaurant business the focus is on
+                customer destinations. And create agood experience. Recognizing the need for customers to think about
+                the group. is the beginning When
+                customers want to rest. Want to have a shelter or eat and dessert. In order for the Group Sustainable
+                growth in this industry.
+            </p>
+
+            <div class="btn btn-group gap-3 mb-4">
+                <button type="button" class="btn button mr-1">general information</button>
+                <button type="button" class="btn button">nature of business</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============== Financial =============== -->
+    <section id="financial" class="financial-img-bg">
+        <div class="container">
+
+            <div class="financial-caption d-md-block text-center p-5">
+                <h4 class="financial-title mt-3">
+                    financial highlights
+                </h4>
+                <p class="financial-description">
+                    Q222018 Earnings - Excellent performance
+                </p>
+
+                <div class="row justify-content-center gap-3 my-4">
+                    <div class="col-2 box-container">
+                        <p class="title">Total Revenue</p>
+                        <h3 class="money">1,352.22</h3>
+                        <p>Million Baht</p>
+                    </div>
+
+                    <div class="col-2 box-container">
+                        <p class="title">Total Asset</p>
+                        <h3 class="money">4,878.48</h3>
+                        <p>Million Baht</p>
+                    </div>
+
+                    <div class="col-2 box-container">
+                        <p class="title">Net Profit</p>
+                        <h3 class="money">144.68</h3>
+                        <p>Million Baht</p>
+                    </div>
+
+                    <div class="col-2 box-container">
+                        <p class="title">EBITDA</p>
+                        <h3 class="money">337.81</h3>
+                        <p>Million Baht</p>
+                    </div>
+                </div>
+
+                <button type="button" class="btn button">financial hightlights</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =============== Corporate Governance =============== -->
+
+    <section id="corporate-governance">
+        <div class="container py-5">
+
+            <div class="row my-3 gap-4 w-100">
+                <div class="corporate-governance-main col-8">
+                    <img class="main-img" src="./assets/img/img-cg.jpg" alt="">
+                    <h3 class="title mt-5">corporate governance</h3>
+                    <p class="description my-4">
+                        Veranda Resort is committed to the highest levels of ethical conduct and corporate governance
+                        standards which are consistent with our corporate culture. See the document below that
+                        guide the members of the Board in thier oversight Company.
+                    </p>
+
+                    <div class="button-group">
+                        <span type="button" class="button-link">CG Principle
+                            <span class="button-icon"><img class="button-icon-img"
+                                    src="./assets/img/icon/icon-arrow.svg"></span>
+                        </span>
+                        <span type="button" class="button-link">Documents
+                            <span class="button-icon"><img class="button-icon-img"
+                                    src="./assets/img/icon/icon-arrow.svg"></span>
+                        </span>
+                        <span type="button" class="button-link">Whistle Blowing
+                            <span class="button-icon"><img class="button-icon-img"
+                                    src="./assets/img/icon/icon-arrow.svg"></span>
+                        </span>
+                    </div>
+
+
+                </div>
+                <div class="corporate-governance-aside col-3">
+
+                    <div class="box-aside row mb-3 text-center">
+                        <h3 class="title">stock price</h3>
+                        <h6>vranda</h6>
+
+                        <h3 class="stock-price">68.50<p class="d-inline">thb</p>
+                        </h3>
+                        <span><span><img src="/assets/img/icon/icon-stock-up.svg" alt=""></span>1.25 (0.54%)</span>
+                        <p class="update">Updated: 06 Jun 2017 16:02</p>
+
+                        <span type="button" class="button-link">View Stock Quote
+                            <span class="button-icon"><img class="button-icon-img"
+                                    src="./assets/img/icon/icon-arrow-white.svg"></span>
+                        </span>
+
+                    </div>
+                    <div class="box-aside row text-center">
+                        <h3 class="title mt-4">ir calendar</h3>
+                        <p class="box-aside-description">Calendar of IR-related information <br> and major dates.</p>
+
+                        <span type="button" class="button-link">View All Event
+                            <span class="button-icon"><img class="button-icon-img"
+                                    src="./assets/img/icon/icon-arrow-white.svg"></span>
+                        </span>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =============== lastest-news =============== -->
+
+    <section id="lastest-news">
+        <div class="container">
+
+            <h3 class="lastest-news-title pt-5 text-center">
+                lastest news
+            </h3>
+
+            <!-- Swiper -->
+            <div class="swiper mySwiper my-4">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <p class="title">June 11, 2016</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                            architecto, saepe sequi tempora repudiandae reiciendis.</p>
+                        <div class="button-readmore">Read more</div>                        
+                        <div class="triangle-right"></div>
+                        <div class="triangle-left"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="title">June 12, 2016</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                            architecto, saepe sequi tempora repudiandae reiciendis.</p>
+                        <div class="button-readmore">Read more</div>                        
+                        <div class="triangle-right"></div>
+                        <div class="triangle-left"></div>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="title">June 13, 2016</p>
+                        <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis
+                            architecto, saepe sequi tempora repudiandae reiciendis.</p>
+                        <div class="button-readmore">Read more</div>                        
+                        <div class="triangle-right"></div>
+                        <div class="triangle-left"></div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="button-last-news">
+                <button type="button" class="btn button my-1">view all</button>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =============== Quick Download =============== -->
+    <section id="quick-download" class="download-img-bg">
+        <div class="dark-overlay">
+            <div class="container py-3">
+
+                <div class="download-caption d-md-block text-center p-5">
+                    <h4 class="download-title mt-3">
+                        quick download
+                    </h4>
+
+                    <div class="row justify-content-center gap-3 my-4">
+                        <div class="col-2 box-container">
+                            <img src="./assets/img/icon/icon-ar.svg" alt="">
+                            <h6 class="title">Annual Report <br>
+                                2017</h6>
+                            <p><img class="download-icon" src="./assets/img/icon/icon-download.svg">PDF Download</p>
+                        </div>
+
+                        <div class="col-2 box-container">
+                            <img src="./assets/img/icon/icon-form56.svg" alt="">
+                            <h6 class="title">Form 56-1 <br>
+                                2017</h6>
+                            <p><img class="download-icon" src="./assets/img/icon/icon-download.svg">PDF Download</p>
+                        </div>
+
+                        <div class="col-2 box-container">
+                            <img src="./assets/img/icon/icon-financial.svg" alt="">
+                            <h6 class="title">Financial Statements <br>
+                                Q3/2018</h6>
+                            <p class="download-btn"><img class="download-icon"
+                                    src="./assets/img/icon/icon-download.svg">PDF Download</p>
+                        </div>
+
+                        <div class="col-2 box-container">
+                            <img src="./assets/img/icon/icon-md&a.svg" alt="">
+                            <h6 class="title">MD&A <br>
+                                Q3/2018</h6>
+                            <p><img class="download-icon" src="./assets/img/icon/icon-download.svg"> PDF Downloadt</p>
+                        </div>
+                    </div>
+
+                    <span type="button" class="button-link float-end text-white">Investor Kits
+                        <span class="button-icon"><img class="button-icon-img"
+                                src="./assets/img/icon/icon-arrow-white.svg"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =============== Footer =============== -->
+
+    <section id="footer">
+        <div class="footer-img-bg">
+            <div class="container py-5">
+                <div class="row gap-4">
+
+                    <div class="email-container col-7">
+
+                        <h4 class="title">email alerts</h4>
+
+                        <div class="email-content row ">
+                            <p class="col-7 email-description ">Keep yourself up to date with all the latest
+                                announcements <br>
+                                from the company.</p>
+                            <div class="col-2 ">
+                                <button type="button" class="btn button">subscribe</button>
+                            </div>
+                        </div>
+
+                        <div class="ir-code-box" type="button">
+                            <h5 class="d-flex">ir code of conduct</h5>
+                            <span class="download-btn" type="button">
+                                <img class="download-icon" src="/assets/img/icon/icon-download.svg">
+                                <span class="title">PDF Download</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="contact col-4 text-center">
+                        <h4 class="contact-title title">ir contact</h4>
+                        <div class="company-name">Veranda Resort Public Company Limited</div>
+                        <p class="address">178/7 Ratchadapisek Road <br>
+                            Cgandrakasem, Chatuchak, Bangkok 10900 <br>
+                            Telephone: (66) 2513 3003</p>
+                        <button type="button" class="btn button">email: ir@vranda.co.th</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============== Copyright =============== -->
+
+    <section id="copyright">
+        <div class="container text-center">
+            <p>Copyright &#169; 2018 Veranda Resort. All Rights reserved</p>
+        </div>
+    </section>
+
+
+    <!-- Boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <!-- JavaScript -->
+    <script src="/assets/js/script.js"></script>
+
+</body>
+
+</html>

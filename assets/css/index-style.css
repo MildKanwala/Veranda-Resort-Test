@@ -1,0 +1,948 @@
+/* =============== CSS Variable =============== */
+:root {
+
+    /* BG Color */
+    --light-color: #EDEDED;
+    --light-brown-color: #CBB78E;
+    --brown-color: #988866;
+    --nav-color: #6A5E43;
+    --footer-color: #2D2D2D;
+
+    --white-light-color: #ffffffbd;
+    --white-alt-color: #EDEDED;
+    --box-color: #2D2D2D;
+
+    /* Text Color */
+    --title-color: #2E2800;
+    --normal-text-color: #3C3C3C;
+
+    /* Font Weight */
+    --medium: 500;
+    --semibold: 600;
+    --bold: 700;
+
+    /* Font Size */
+
+    /* Z-index */
+    --z-index-dark-overlay: 100;
+    --z-index-img-bg: -100;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h3,
+h4,
+h5,
+.btn {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+
+h3,
+h4,
+h6 {
+    color: var(--title-color);
+}
+
+p {
+    font-weight: lighter;
+    font-size: .8rem;
+}
+
+.button {
+    outline: none;
+    background-color: var(--brown-color);
+    color: #fff;
+    padding: .7rem 1.6rem;
+    font-size: 12px;
+    border-radius: 2px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+    transition: .4s;
+}
+
+.button:hover {
+    outline: none;
+    background-color: var(--nav-color);
+    color: rgba(255, 255, 255, 0.723);
+}
+
+.image-dark-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: var(--dark-overlay);
+    height: 100%;
+}
+
+
+/* =============== Header =============== */
+
+/* Nav */
+.nav {
+    height: 38.5px;
+    align-items: center;
+    background-color: var(--nav-color);
+}
+
+.nav .nav-link {
+    color: #ffffffbd;
+    font-size: .8rem;
+}
+
+.nav .menu:hover {
+    color: #fff;
+    transition: .4s;
+}
+
+.nav .active {
+    background-color: var(--brown-color);
+    transition: .4s;
+}
+
+/* Navbar */
+
+.navbar {
+    height: 108.5px;
+    background-color: #fff;
+    height: 3.6rem;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-brand {
+    position: relative;
+}
+
+.navbar-brand img {
+    width: 6rem;
+    position: absolute;
+    top: -2.6rem;
+    z-index: 999;
+}
+
+.navbar-toggler {
+    padding: .2rem .75rem;
+    font-size: 1rem;
+    border-style: none;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    font-size: .73rem;
+    font-weight: bold;
+    color: var(--title-color);
+    text-transform: uppercase;
+    transition: .4s;
+    background-color: #fff;
+    text-align: center;
+    z-index: -10;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--brown-color);
+}
+
+.dropdown:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu {
+    padding: 0;
+    border-style: none;
+    border-radius: 1px;
+
+}
+
+.dropdownMenu-active {
+    display: block;
+}
+
+.dropdown-item:hover {
+    color: var(--brown-color);
+    background-color: var(--light-color);
+}
+
+.dropdown-item {
+    width: 15.5rem;
+    height: 2.4rem;
+    font-size: .7rem;
+    font-weight: bold;
+    color: var(--title-color);
+    transition: .4s;
+    padding: .6rem 0 .6rem 2rem;
+}
+
+.dropend {
+    position: relative;
+}
+
+.dropend:hover>#sub-dropdown-menu {
+    display: block;
+    position: absolute;
+    right: -15.5rem;
+    top: -16.1rem;
+}
+
+.dropend #sub-dropdown-menu {
+    background-color: #EDEDED;
+    height: 18.5rem;
+}
+
+.dropend-image-icon {
+    width: .6rem;
+    position: absolute;
+    top: 38%;
+    right: 2%;
+}
+
+#last-dropdown {
+    position: relative;
+}
+
+.dropdown-menu-end {
+    position: absolute;
+    right: 0;
+}
+
+/* =============== Banner =============== */
+
+#banner {
+    padding-top: 5.9rem;
+}
+
+.carousel-item {
+    width: 100%;
+    position: relative;
+}
+
+.carousel-item img {
+    position: relative;
+    z-index: var(--z-index-img-bg);
+}
+
+
+.carousel-title {
+    position: relative;
+    color: #fff;
+}
+
+.carousel-title:before,
+.carousel-title:after {
+    content: "";
+    width: 10rem;
+    height: .5px;
+    background-color: #fff;
+    transform: rotate(180deg);
+    position: absolute;
+    left: 41%;
+}
+
+.carousel-title::before {
+    top: -3rem;
+}
+
+.carousel-title::after {
+    bottom: -3rem;
+}
+
+#banner .button {
+    margin: 9rem auto 6%;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    margin: .5rem;
+}
+
+.carousel-indicators button.active {
+    background-color: var(--brown-color);
+}
+
+/* =============== Detail =============== */
+.detail-description {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+/* =============== Financial =============== */
+
+.financial-img-bg {
+    background-image: url('/assets/img/img-financial.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.box-container {
+    width: 13rem;
+    padding-top: 1rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.money {
+    color: var(--brown-color);
+}
+
+/* =============== Corporate Governance =============== */
+
+.corporate-governance-main {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.corporate-governance-main .description {
+    padding-right: 7rem;
+}
+
+.corporate-governance-main::after {
+    content: "";
+    border: 1.5px solid var(--light-brown-color);
+    padding-left: 2rem;
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    height: 89%;
+    z-index: var(--z-index-img-bg);
+}
+
+.button-link {
+    color: var(--brown-color);
+    font-weight: 600;
+    font-size: 0.73rem;
+    margin-right: 1rem;
+}
+
+.button-icon {
+    margin-left: .15rem;
+}
+
+.button-link:hover .button-icon-img {
+    transform: translateX(.25rem);
+    transition: .4s;
+}
+
+.box-aside {
+    width: 22.3rem;
+    height: 17rem;
+    color: #fff;
+}
+
+.box-aside:nth-child(1) {
+    background-color: var(--brown-color);
+}
+
+.box-aside:nth-child(2) {
+    background-image: url('/assets/img/img-ircalendar.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.corporate-governance-aside h3,
+.corporate-governance-aside h6,
+.corporate-governance-aside .button-link {
+    color: #fff;
+}
+
+.update {
+    color: var(--light-brown-color);
+}
+
+.box-aside {
+    padding: 2rem;
+}
+
+.stock-price {
+    font-weight: 700;
+}
+
+.box-aside-description {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* =============== Lastest News =============== */
+
+#lastest-news {
+    height: 450px;
+    background-color: #EDEDED;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background: #fff;
+    height: 13rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    -webkit-align-items: start;
+    align-items: start;
+    border-bottom: 5px solid var(--brown-color);
+    border-radius: 2px;
+}
+
+.swiper-pagination-bullet {
+    background-color: var(--brown-color);
+}
+
+.title {
+    margin: 1rem;
+    color: var(--light-brown-color);
+    font-weight: bold;
+}
+
+.description {
+    margin: 0 1rem;
+    font-size: 0.9rem;
+}
+
+.button-readmore {
+    font-size: 0.8rem;
+    margin: 1rem 0 0 1rem;    
+    color: var(--brown-color);
+    font-weight: bold;
+}
+
+#lastest-news .button-last-news {
+    display: flex;
+    justify-content: center;
+}
+
+
+.triangle-right,
+.triangle-left {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+}
+
+.triangle-right {
+    right: 0;
+    border-left: 12rem solid transparent;
+    border-right: 0px solid transparent;
+    border-bottom: 3rem solid #F3F1ED;
+}
+
+.triangle-left {
+    left: 0;
+    border-left: 0 solid transparent;
+    border-right: 23rem solid transparent;
+    border-bottom: 1.7rem solid #F3F1ED;
+}
+
+/* =============== Quick Download =============== */
+
+.download-img-bg {
+    background-image: url('/assets/img/img-quickdownload.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+#quick-download .box-container {
+    width: 15rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 4px #6A5E43;
+    cursor: pointer;
+}
+
+#quick-download .box-container img {
+    width: 2rem;
+}
+
+#quick-download .box-container .title {
+    font-size: 0.9rem;
+    color: var(--brown-color);
+    font-weight: 600;
+    margin: 0.5rem auto 1rem;
+}
+
+.download-title {
+    color: #fff;
+}
+
+.download-icon {
+    height: 0.7rem;
+}
+
+/* =============== Footer =============== */
+
+#footer {
+    background-color: var(--footer-color);
+    height: 300px;
+    color: #fff;
+}
+
+.footer-img-bg {
+    background-image: url('/assets/img/img-bg.png');
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.footer-title {
+    color: #fff;
+}
+
+/* Email Alerts */
+
+#footer .email-container {
+    border-right: 1px solid rgba(255, 255, 255, 0.243);
+}
+
+#footer .title {
+    color: #fff;
+}
+
+.email-content {
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.email-description {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.email-content::after {
+    position: absolute;
+    content: "";
+    width: 32rem;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.243);
+    bottom: -1rem;
+    left: .6rem;
+}
+
+.ir-code-box {
+    background-color: #3C3C3C;
+    width: 31.8rem;
+    height: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.ir-code-box h5 {
+    font-size: 1.1rem;
+    margin-top: .5rem;
+}
+
+.ir-code-box .download-btn {
+    font-size: 0.75rem;
+    position: relative;
+}
+
+.ir-code-box .download-btn:hover .download-icon {
+    transform: translateY(0.3rem);
+    transition: .4s;
+}
+
+.ir-code-box .download-icon {
+    height: .7rem;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+
+/* Contact */
+#footer .contact .company-name {
+    color: #6A5E43;
+    font-weight: 500;
+}
+
+#footer .address {
+    margin: 1rem auto;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* =============== Copyright =============== */
+
+#copyright {
+    height: 50px;
+    padding-top: 1rem;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: var(--footer-color);
+    border-top: 1px solid #3C3C3C;
+}
+
+/* Breakpoint */
+
+@media screen and (max-width: 993px) {
+
+    .dropend .dropdown-item {
+        width: 28rem;
+    }
+
+    .dropend:hover>#sub-dropdown-menu {
+        right: -28rem;
+    }
+
+    .detail-description {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .financial-img-bg {
+        height: 540px;
+    }
+
+    #corporate-governance .container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #corporate-governance .row {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .corporate-governance-main {
+        padding-left: 1rem;
+        width: 100%;
+        padding-bottom: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .corporate-governance-aside {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2rem;
+    }
+
+    .corporate-governance-aside .box-aside {
+        margin: 0 auto;
+    }
+
+    #corporate-governance {
+        height: 1040px;
+    }
+
+    #quick-download {
+        height: 660px;
+    }
+
+    #footer {
+        height: 590px;
+    }
+
+    #footer .row {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        justify-content: center;
+    }
+
+    #footer .email-container {
+        border-right: none;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .email-description,
+    .email-content,
+    .contact {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .email-content .col-2 {
+        width: 100%;
+        justify-items: center;
+    }
+
+    #footer .container {
+        height: 560px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .dropend .dropdown-item {
+        width: 16.76rem;
+    }
+
+    .dropend:hover>#sub-dropdown-menu {
+        right: -16.76rem;
+    }
+
+    #banner .carousel-title {
+        font-size: 1.2rem;
+    }
+
+
+    .carousel-title:before,
+    .carousel-title:after {
+        left: 35%;
+    }
+
+    .carousel-title::before {
+        top: -70%;
+    }
+
+    .carousel-title::after {
+        bottom: -70%;
+    }
+
+    #banner .button {
+        margin: 5rem auto 4%;
+    }
+
+    .corporate-governance-main {
+        width: 530px;
+        text-align: center;
+    }
+
+    .corporate-governance-main .description {
+        padding-right: 0;
+    }
+
+    .corporate-governance-main .main-img {
+        width: 100%;
+    }
+
+    .corporate-governance-main {
+        padding-bottom: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .corporate-governance-aside {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    #corporate-governance {
+        height: 1160px;
+    }
+
+    #corporate-governance .row {
+        height: 250px;
+    }
+
+    #quick-download {
+        height: 980px;
+    }
+
+}
+
+
+@media screen and (max-width: 577px) {
+
+    .navbar-brand img {
+        top: -2.5rem;
+        left: 1.7rem;
+        transform: scale(0.9);
+    }
+
+    .dropend .dropdown-item {
+        width: 7rem;
+    }
+
+    .dropend:hover>#sub-dropdown-menu {
+        right: -9rem;
+    }
+
+    #banner .carousel-title {
+        font-size: 1.2rem;
+    }
+
+    .carousel-title:before,
+    .carousel-title:after {
+        display: none;
+    }
+
+    #banner .button {
+        margin: 1rem auto 4%;
+    }
+
+    .carousel-indicators {
+        margin-bottom: .5rem;
+    }
+
+    .carousel-btn {
+        border: 1px solid saddlebrown;
+        width: 3px;
+        height: 1px;
+        border-radius: 10%;
+        margin: .5rem;
+    }
+
+}
+
+@media screen and (max-width: 413px) {
+
+    .nav.nav-pills .nav-link {
+        font-size: 0.6rem;
+        padding: 0 0 0 0.7rem;
+    }
+
+    .nav .active {
+        background-color: var(--brown-color);
+        width: 2.4rem;
+        height: 100%;
+        margin-left: 0.4rem;
+        padding-top: 0.7rem;
+    }
+
+    .carousel-item img {
+        height: 250px;
+    }
+
+
+    #banner .carousel-title {
+        font-size: 1rem;
+    }
+
+    .button {
+        padding: .5rem 1.4rem;
+        font-size: 0.7rem;
+    }
+
+    #banner .button {
+        margin: 1rem auto 2%;
+    }
+
+    .carousel-indicators {
+        transform: scale(0.5);
+    }
+
+    .carousel-indicators {
+        margin-bottom: 0rem;
+    }
+
+    #detail .btn {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        padding-top: 0.7rem;
+        height: 2.6rem;
+    }
+
+    #detail {
+        height: 480px;
+    }
+
+    .financial-img-bg {
+        height: 840px;
+    }
+
+    .corporate-governance-main {
+        width: 320px;
+        text-align: center;
+    }
+
+    .corporate-governance-main .description {
+        padding-right: 0;
+    }
+
+    .corporate-governance-main .main-img {
+        width: 100%;
+    }
+
+    .corporate-governance-main {
+        padding-bottom: 2rem;
+        margin-bottom: 0rem;
+    }
+
+    .corporate-governance-aside {
+        transform: scale(0.85);
+        grid-template-columns: 1fr;
+        grid-gap: 0rem;
+    }
+
+    #corporate-governance {
+        height: 1100px;
+        padding: 1rem;
+    }
+
+    #corporate-governance .row {
+        height: 250px;
+    }
+
+    .white-box {
+        margin: 0 auto;
+        width: 85%;
+    }
+
+    #quick-download {
+        height: 990px;
+    }
+
+    .triangle-left {
+        left: 0;
+        border-left: 0 solid transparent;
+        border-right: 15rem solid transparent;
+        border-bottom: 1.7rem solid #F3F1ED;
+    }
+
+    .ir-code-box {
+        margin: 0 auto;
+        width: 80%;
+        height: 6rem;
+        display: grid;
+        padding-top: 0.5rem;
+        grid-template-rows: 3rem 2rem;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .ir-code-box .d-flex {
+        width: 100%;
+    }
+
+    .ir-code-box .download-btn {
+        text-align: start;
+        margin-left: 16%;
+    }
+
+    #footer {
+        height: 640px;
+        padding-top: 1.5rem;
+    }
+
+    #footer .row {
+        height: 120px;
+    }
+
+    .email-content::after {
+        display: none;
+    }
+
+    #copyright p {
+        font-size: 0.6rem;
+    }
+
+    .email-content {
+        margin: 0 auto
+    }
+
+}
